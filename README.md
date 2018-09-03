@@ -5,3 +5,7 @@ Notes:
 1. By default, Elasticsearch will only return a max of 10000 results. So depending on the volume of DNS queries you may consider adding filters when you build the visuilazation to reduce the number of retunred values.  Below is an example query:
   **event_type:bro_dns AND subdomain_length: [20 TO * ]**
 2. If you are running the frequency server docker container you can also display the frequency score of the subdomain and display that score in a scatter plot.
+
+Subdomain Frequency Score: ![alt text](https://github.com/bryant-treacle/Kibana-Vega-Visualizations/blob/master/Images/Subdomain_freq_score_scatterplot.PNG)
+
+Subdomain Length: ![alt text](https://github.com/bryant-treacle/Kibana-Vega-Visualizations/blob/master/Images/Subdomain_length_scatterplot.PNG)
